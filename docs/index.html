@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Futbolistas Chilenos: El ecosistema digital N°1 de scouting, noticias y datos del fútbol joven y profesional en Chile.">
+    <meta name="author" content="Futbolistas Chilenos SpA">
+    
+    <title>Futbolistas Chilenos | Ecosistema Digital & Scouting</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --chile-red: #D32F2F;
+            --chile-blue: #0D47A1;
+            --dark-bg: #121212;
+            --card-bg: #1E1E1E;
+            --text-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(13, 71, 161, 0.85), rgba(211, 47, 47, 0.8)), url('https://images.unsplash.com/photo-1518091043644-c1d4457512c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0 60px 0;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .hero-logo {
+            width: 120px;
+            height: 120px;
+            background-color: white;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--chile-red);
+            font-size: 3rem;
+            font-weight: bold;
+            border: 4px solid var(--chile-blue);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            font-weight: 300;
+        }
+
+        /* Metrics Bar (Data Driven) */
+        .metrics-bar {
+            background-color: var(--card-bg);
+            padding: 20px 0;
+            margin-top: -40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 10;
+        }
+
+        .metric-item h3 {
+            color: var(--chile-red);
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+        .metric-item p {
+            font-size: 0.8rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Botones Principales */
+        .main-buttons {
+            padding: 50px 0;
+        }
+
+        .btn-custom {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .btn-fc {
+            background-color: var(--chile-red);
+            color: white;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4);
+        }
+
+        .btn-fy {
+            background-color: var(--chile-blue);
+            color: white;
+            box-shadow: 0 4px 15px rgba(13, 71, 161, 0.4);
+        }
+
+        .btn-data {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: black;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            filter: brightness(110%);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .btn-data:hover {
+            color: black;
+        }
+
+        .btn-icon {
+            margin-right: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #333;
+        }
+        
+        .shake {
+            animation: shake 3s cubic-bezier(.36,.07,.19,.97) both infinite;
+        }
+
+        @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="container">
+            <div class="hero-logo">FC</div>
+            <h1>Futbolistas Chilenos</h1>
+            <p>El ecosistema digital líder en cobertura, scouting y datos del fútbol chileno.</p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-tiktok fa-2x"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="metrics-bar row text-center">
+                    <div class="col-4 metric-item border-right border-secondary">
+                        <h3>2.37M+</h3>
+                        <p>Impresiones Mensuales</p>
+                    </div>
+                    <div class="col-4 metric-item border-right border-secondary">
+                        <h3>85%</h3>
+                        <p>Hombres 25-34 Años</p>
+                    </div>
+                    <div class="col-4 metric-item">
+                        <h3>ANFP</h3>
+                        <p>Cobertura Fútbol Joven</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row main-buttons justify-content-center">
+            <div class="col-md-6 col-12">
+                
+                <h4 class="text-center mb-4" style="color: #aaa; font-size: 0.9rem;">SELECCIONA TU PERFIL</h4>
+
+                <a href="https://www.instagram.com/futbolistas.chilenos" target="_blank" class="btn btn-custom btn-fc">
+                    <i class="fab fa-instagram btn-icon"></i> Noticias & Viral (FC)
+                </a>
+
+                <a href="https://www.instagram.com/chilenosproyeccion" target="_blank" class="btn btn-custom btn-fy">
+                    <i class="fas fa-graduation-cap btn-icon"></i> Fútbol Joven & Proyección (FY)
+                </a>
+
+                <a href="https://wa.me/569XXXXXXXX?text=Hola,%20quiero%20información%20sobre%20los%20Informes%20de%20Scouting%20para%20jugadores" target="_blank" class="btn btn-custom btn-data shake">
+                    <i class="fas fa-chart-line btn-icon"></i> Solicitar Informe de Scouting (Jugadores)
+                </a>
+
+                <a href="mailto:contacto@futbolistaschilenos.cl" class="btn btn-outline-light btn-custom" style="border: 1px solid #555;">
+                    <i class="fas fa-briefcase btn-icon"></i> Publicidad & Media Kit (Marcas)
+                </a>
+
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center">
+                <div style="background: #1a1a1a; padding: 20px; border-radius: 10px; border-left: 4px solid #FFD700;">
+                    <h5 style="color: #fff;">¿Eres Representante o Club?</h5>
+                    <p style="font-size: 0.9rem; color: #ccc;">Accede a nuestra base de datos de "Primera B" y Talentos Ocultos. Inteligencia de mercado para fichajes eficientes.</p>
+                    <button class="btn btn-sm btn-light">Agendar Reunión Consultoría</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Futbolistas Chilenos SpA. Todos los derechos reservados.</p>
+            <p>Viña del Mar, Chile | <a href="#" style="color: #888;">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
